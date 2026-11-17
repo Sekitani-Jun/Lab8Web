@@ -35,17 +35,12 @@ C:\laragon\www\Lab8_php_database\
 ### 1. Membuat Database Terlebih Dahulu
 
 Masuk ke MySQL melalui Laragon,
-
-Buat database
-
 ![Buat database](media/1.png)
 
 Buat Tabel
-
 ![Buat tabel](media/2.png)
 
 Hasil
-
 ![Hasil struktur tabel](media/3.png)
 
 ### 2. Buka Direktori PHP
