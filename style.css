@@ -1,0 +1,69 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+h1 {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+
+.main {
+  margin-top: 20px;
+}
+
+table {
+  border-collapse: collapse;
+  width: auto;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  text-align: center;
+}
+
+/* Tambahan CSS untuk Form Tambah/Ubah Barang */
+.input {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.input label {
+  width: 180px;
+}
+
+.input input[type="text"],
+.input select {
+  padding: 6px 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.input input[type="text"] {
+  width: 200px;
+}
+
+.submit {
+  margin-left: 180px;
+}
+
+.submit input[type="submit"] {
+  background-color: #0000ff;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  padding: 6px 12px;
+  cursor: pointer;
+}
