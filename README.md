@@ -35,19 +35,19 @@ C:\laragon\www\Lab8_php_database\
 ### 1. Membuat Database Terlebih Dahulu
 
 Masuk ke MySQL melalui Laragon,
-![Buat database](media\1.png)
+![Buat database](media/1.png)
 
 Buat Tabel
-![Buat tabel](media\2.png)
+![Buat tabel](media/2.png)
 
 Hasil
-![Hasil struktur tabel](media\3.png)
+![Hasil struktur tabel](media/3.png)
 
 ### 2. Buka Direktori PHP
 
 Koneksikan dengan Database. Buat file dengan nama koneksi.php
 
-![Kode koneksi.php](media\4.png)
+![Kode koneksi.php](media/4.png)
 
 ### 3. Membuat file index untuk menampilkan data
 
@@ -55,19 +55,19 @@ Buat file dengan nama index.php berdasarkan modul
 
 Ikut menambahkan untuk fitur tambah barang
 
-![Fitur tambah barang](media\5.png)
+![Fitur tambah barang](media/5.png)
 
 Juga menambahkan fitur ubah dan hapus berdasarkan id_barang
 
-![Fitur ubah dan hapus](media\6.png)
+![Fitur ubah dan hapus](media/6.png)
 
 Serta membuat file css untuk tampilan
 
-![Kode style.css](media\7.png)
+![Kode style.css](media/7.png)
 
 Hasil:
 
-![Hasil tampilan data barang](media\8.png)
+![Hasil tampilan data barang](media/8.png)
 
 ### 4. Menambahkan Data
 
@@ -77,15 +77,15 @@ Hasil:
 - `if (isset($_POST['submit']))` memeriksa apakah tombol bernama submit sudah diklik oleh pengguna.
 - `$filename = str_replace(' ', '_', $file_gambar['name']);` mengganti karakter spasi pada nama file menjadi garis bawah (_) agar alamat URL gambar tidak rusak saat dipanggil HTML.
 
-![Kode tambah.php](media\9.png)
+![Kode tambah.php](media/9.png)
 
 Serta menambahkan css untuk mempercantik
 
-![CSS form tambah barang](media\10.png)
+![CSS form tambah barang](media/10.png)
 
 Hasil:
 
-![Hasil form tambah barang](media\11.png)
+![Hasil form tambah barang](media/11.png)
 
 ### 5. Mengubah Data
 
@@ -95,15 +95,15 @@ Membuat file baru ubah.php
 - `include_once 'koneksi.php';` Menyisipkan dan menjalankan isi file koneksi.php (agar variabel koneksi `$conn` dapat digunakan). Akhiran `_once` memastikan file tersebut hanya dipanggil satu kali dalam satu halaman untuk mencegah error pemanggilan ganda.
 - `$id = $_POST['id'];` hingga `$stok = $_POST['stok'];` Mengambil nilai dari masing-masing elemen `<input>` atau `<select>` berdasarkan atribut name-nya, lalu menyimpannya ke dalam variabel lokal (`$id`, `$nama`, `$kategori`, `$harga_jual`, `$harga_beli`, `$stok`) agar lebih ringkas saat disusun ke dalam query SQL. Khusus `$_POST['id']` diambil dari input tersembunyi (`type="hidden"`) sebagai acuan ID barang yang akan diperbarui di database.
 
-![Kode ubah.php](media\12.png)
+![Kode ubah.php](media/12.png)
 
 Hasil: jika stok dirubah
 
-![Hasil ubah stok](media\13.png)
+![Hasil ubah stok](media/13.png)
 
 Hasil: saat telah disimpan
 
-![Hasil setelah disimpan](media\14.png)
+![Hasil setelah disimpan](media/14.png)
 
 ### 6. Hapus Data
 
@@ -119,12 +119,12 @@ Membuat file baru hapus.php
 - `$result = mysqli_query($conn, $sql);`
 - `header('location: index.php');`
 
-![Kode hapus.php](media\15.png)
+![Kode hapus.php](media/15.png)
 
 Hasil: Menghapus HP OPPO Android
 
-![Sebelum menghapus](media\16.png)
+![Sebelum menghapus](media/16.png)
 
 Hasil: Setelah dihapus
 
-![Setelah dihapus](media\17.png)
+![Setelah dihapus](media/17.png)
